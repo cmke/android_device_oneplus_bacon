@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
     libinit_bacon \
     fstab.bacon \
     init.bacon.rc \
+    init.performance_profiles.rc \
     init.qcom.usb.rc \
     ueventd.bacon.rc
 
