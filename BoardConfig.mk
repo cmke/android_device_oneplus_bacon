@@ -21,6 +21,14 @@
 TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3
 
+# Optimization
+GRAPHITE_OPTS := yes
+STRICT_ALIASING := yes
+USE_HOST_4_8 := yes
+USE_O3_OPTIMIZATIONS := yes
+TARGET_GCC_VERSION_EXP := 4.8-sm
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.9-sm
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/bacon/bluetooth
 
