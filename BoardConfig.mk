@@ -21,14 +21,8 @@
 TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
 
-# Optimization
-GRAPHITE_OPTS := true
-STRICT_ALIASING := true
-USE_HOST_4_8 := true
-USE_O3_OPTIMIZATIONS := true
-KRAIT_TUNINGS := true
-TARGET_GCC_VERSION_EXP := 4.8-sm
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.9-sm
+TARGET_GCC_VERSION_EXP := $(TARGET_SM_AND)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_SM_KERNEL)
 
 TARGET_USERIMAGES_USE_F2FS := true
 

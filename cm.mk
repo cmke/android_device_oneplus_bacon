@@ -16,6 +16,13 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# Some common sabermod variables before common
+GRAPHITE_OPTS := true
+O3_OPTIMIZATIONS := true
+TARGET_SM_AND := 4.8-sm
+TARGET_SM_KERNEL := 4.9-sm
+TARGET_ARCH := arm
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
