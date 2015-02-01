@@ -16,6 +16,16 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# Optimization
+TARGET_ARCH := arm
+GRAPHITE_OPTS := true
+STRICT_ALIASING := true
+USE_HOST_4_8 := true
+USE_O3_OPTIMIZATIONS := true
+KRAIT_TUNINGS := true
+TARGET_TC_ROM := 4.9-sm
+TARGET_TC_KERNEL := 4.9-sm
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
